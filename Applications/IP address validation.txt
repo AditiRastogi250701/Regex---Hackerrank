@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import re
+
+n=int(input())
+for i in range(0,n):
+    txt=input()
+    if (re.match(r'^((\d|\d{2}|[1](\d){2}|[2][0-4]\d|[2][5][0-5])\.){3}(\d{2}|[1]\d\d|[2][0-4]\d|[2][5][0-5])$',txt)):
+        print("IPv4")
+    elif (re.match(r'^([a-fA-F0-9]{1,4}:){7}[a-fA-F0-9]{1,4}$',txt)):
+        print("IPv6")
+    else:
+        print("Neither")

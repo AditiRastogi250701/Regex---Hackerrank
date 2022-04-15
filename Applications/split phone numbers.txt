@@ -1,0 +1,19 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import re
+
+n=int(input())
+for i in range(0,n):
+    num=input()
+    if ' ' in num:
+        num=num.split(' ')
+    else:
+        num=num.split('-')
+    cc=num[0]
+    lc=num[1]
+    numb=num[2]
+    print("CountryCode={c},LocalAreaCode={l},Number={number}".format(c=cc,l=lc,number=numb))
+    
+    
+    
+    

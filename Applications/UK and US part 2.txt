@@ -1,0 +1,18 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import re
+
+
+n=int(input())
+sen=[]
+for i in range(0,n):
+    sen.extend(list(input().split()))
+t=int(input())
+for i in range(0,t):
+    w=input()
+    bw=re.sub("our","or",w)
+    c=0
+    for each in sen:
+        if w==each or bw==each:
+            c=c+1
+    print(c)

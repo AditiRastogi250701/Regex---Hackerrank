@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import re
+
+n=int(input())
+count=0
+for i in range(0,n):
+    txt=input()
+    if(re.search(r'(hackerrank)+',txt,re.IGNORECASE)):
+        count=count+1
+print(count)

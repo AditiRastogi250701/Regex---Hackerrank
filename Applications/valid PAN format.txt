@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import re
+
+Regex=r'^[A-Z]{5}[0-9]{4}[A-Z]{1}$'
+n=int(input())
+for i in range(0,n):
+    txt=input()
+    if(re.match(Regex,txt)):
+        print("YES")
+    else:
+        print("NO")

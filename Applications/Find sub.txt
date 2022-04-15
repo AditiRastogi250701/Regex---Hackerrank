@@ -1,0 +1,13 @@
+import re
+
+N=int(input())
+words=[]
+for i in range(N):
+    words.append(input())
+T=int(input())
+for i in range(T):
+    w = input()
+    cnt = 0
+    for s in words:
+        cnt += len(re.findall("\w" + w + "\w", s))
+    print(cnt)

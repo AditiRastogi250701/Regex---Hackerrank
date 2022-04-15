@@ -1,0 +1,20 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import re
+
+r1=r'^(hackerrank)'
+r2=r'(hackerrank)$'
+r3=r'^(hackerrank)$'
+
+n=int(input())
+while(n!=0):
+    txt=input()
+    if(re.search(r3,txt)):
+        print("0")
+    elif(re.search(r2,txt)):
+        print("2")
+    elif(re.search(r1,txt)):
+        print("1")
+    else:
+        print("-1")
+    n-=1
