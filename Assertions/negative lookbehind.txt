@@ -1,0 +1,1 @@
+Regex_Pattern = r'(?<![a|e|i|o|u|A|E|I|O|U])(\w|\W)'	# Do not delete 'r'.
