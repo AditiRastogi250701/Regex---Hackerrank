@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import re
+
+Regex_Pattern=r'^(_|\.)[0-9]+[a-zA-Z]*(_?)$'
+n=int(input())
+for i in range(0,n):
+    txt=input()
+    if(re.search(Regex_Pattern,txt)):
+        print("VALID")
+    else:
+        print("INVALID")

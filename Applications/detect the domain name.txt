@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import re,sys
+
+
+txt=sys.stdin.read()
+regex=r"http[s]?://[\w-]+\.[\.\w-]+[\?/\"]"
+a=set(re.findall(regex,txt))
+ans=set()
+for e in a:
+…print(';'.join(sorted(list(set(ans)))))

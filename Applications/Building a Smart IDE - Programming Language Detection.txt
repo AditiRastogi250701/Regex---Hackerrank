@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import sys
+
+code = sys.stdin.read()
+if "import java" in code:
+    print("Java")
+elif "#include" in code:
+    print("C")
+else:
+    print("Python")
+    
